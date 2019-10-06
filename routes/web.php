@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'smsPublic@index');
+Route::post('/enviar', 'smsPublic@smsPublicSend');
